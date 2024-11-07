@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Curiosidade sobre Programação </title>
+	<style>
+		body {
+			background-color: black;
+		}
+		
+		#container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			perspective: 1000px;
+		}
+		
+		footer {
+			background-color: red;
+			font-size: 25px;
+			color: green;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+		}
+		
+		.cartao {
+			background-color:red;
+			width: 300px;
+			height: 200px;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #00ff04e1; 
+			box-shadow: 0 0 10px rgb(255, 0, 0);
+			position: relative;
+			transform-style: preserve-3d;
+			transition: transform 0.5s;
+		}
+		
+		.cartao:hover {
+			transform: rotateY(180deg);
+		}
+		
+		.cartao .frente, .cartao .verso {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+		
+		.cartao .verso {
+			transform: rotateY(180deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 1</h2>
+			</div>
+			<div class="verso">
+				<h2>Quando foi criado o primeiro algoritmo? </h2>
+				<h3>Resposta:</h3>
+				<p>Ada Lovelace criou a primeira linguagem em 1843.</p>
+			</div>
+		</div>
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 2</h2>
+			</div>
+			<div class="verso">
+				<h2>O número 256</h2>
+			    <h3>Resposta:</h3>
+				<p>Representa todos os valores possíveis em um byte (0-255).</p>
+			</div>
+		</div>
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 3</h2>
+			</div>
+			<div class="verso">
+				<h2>“Hello, World!”</h2>
+				<h3>Resposta:</h3>
+				<p>A palavra "Hello World" é o primeiro programa básico em muitas linguagens.</p>
+			</div>
+		</div>
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 4</h2>
+			</div>
+			<div class="verso">
+				<h2>Origem do “bug </h2>
+				<h3>Respposta:</h3>
+				<p>Um inseto causou um problema no Mark II em 1947.</p>
+			</div>
+		</div>
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 5</h2>
+			</div>
+			<div class="verso">
+				<h2>Linguagens </h2>
+				<h3>Resposta:</h3>
+				<p>Existem mais de 700 linguagens de programação.</p>
+			</div>
+		</div>
+		<div class="cartao">
+			<div class="frente">
+				<h2>Pergunta 6 </h2>
+			</div>
+			<div class="verso">
+				<h2>O que é um algoritmo?</h2>
+				<h3>Resposta:</h3>
+				<p>Um algoritmo é uma sequência de passos para resolver um problema.</p>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		Curiosidade Na Programação
+	</footer>
+</body>
+</html>
